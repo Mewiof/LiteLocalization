@@ -53,7 +53,7 @@ namespace Mewiof.LiteLocalization {
 			}
 		}
 
-		public static string GetLocalizedValue(string key, bool ignoreWarning) {
+		public static string GetLocalizedValue(string key, bool ignoreWarning = false) {
 #if UNITY_EDITOR
 			if (!_initialized) {
 				Init();

@@ -23,14 +23,10 @@ namespace Mewiof.LiteLocalization {
 			_instance = CreateInstance<SearchWindow>();
 			_drawer = drawer;
 
-			if (!string.IsNullOrWhiteSpace(elemKey)) {
-				_value = elemKey.ToLower();
-				Search();
-			}
-			else {
-				_value = string.Empty;
-			}
+			_value = !string.IsNullOrWhiteSpace(elemKey) ? elemKey.ToLower() : string.Empty;
 			_scroll = Vector2.zero;
+
+			Search();
 
 			Vector2 mousePos = GUIUtility.GUIToScreenPoint(Event.current.mousePosition);
 			_instance.ShowAsDropDown(new(mousePos.x - 512f, mousePos.y + 16f, 16f, 16f), new Vector2(512f, 256f));

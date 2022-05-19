@@ -9,7 +9,7 @@ namespace Mewiof.LiteLocalization {
 			this.key = key;
 		}
 
-		public string Value => Localization.GetLocalizedValue(key, false);
+		public string Value => Localization.GetLocalizedValue(key);
 
 		public static implicit operator LocalizedString(string key) {
 			return new(key);

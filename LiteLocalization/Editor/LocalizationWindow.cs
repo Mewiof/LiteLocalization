@@ -64,6 +64,8 @@ namespace Mewiof.LiteLocalization {
 			}
 			if (GUILayout.Button("Set", GUILayout.MaxWidth(64f)) && !string.IsNullOrWhiteSpace(elemKey)) {
 				Localization.dict[elemKey] = _elemValue;
+				elemKey = string.Empty;
+				_elemValue = string.Empty;
 			}
 			if (GUILayout.Button("Remove", GUILayout.MaxWidth(64f)) && EditorUtility.DisplayDialog("Confirmation", "Are you sure?", "yes", "no") &&
 				!string.IsNullOrWhiteSpace(elemKey)) {
