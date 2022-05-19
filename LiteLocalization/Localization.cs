@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Mewiof.Localization {
+namespace Mewiof.LiteLocalization {
 
 	public static class Localization {
 

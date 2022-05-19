@@ -1,7 +1,7 @@
 using UnityEngine;
 using TMPro;
 
-namespace Mewiof.Localization {
+namespace Mewiof.LiteLocalization {
 
 	[RequireComponent(typeof(TextMeshProUGUI))]
 	public class TextMeshProUGUILocalizer : MonoBehaviour {

@@ -1,4 +1,4 @@
-namespace Mewiof.Localization {
+namespace Mewiof.LiteLocalization {
 
 	[System.Serializable]
 	public struct LocalizedString {

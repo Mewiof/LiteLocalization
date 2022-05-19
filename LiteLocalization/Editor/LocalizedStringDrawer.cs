@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEditor;
 
-namespace Mewiof.Localization {
+namespace Mewiof.LiteLocalization {
 
 	[CustomPropertyDrawer(typeof(LocalizedString))]
 	public class LocalizedStringDrawer : PropertyDrawer {
