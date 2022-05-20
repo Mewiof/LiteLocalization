@@ -46,9 +46,7 @@ namespace Mewiof.LiteLocalization {
 
 			_dropdown = EditorGUI.Foldout(_foldoutRect, _dropdown, string.Empty);
 
-			if (_key == null) {
-				_key = property.FindPropertyRelative("key");
-			}
+			_key = property.FindPropertyRelative("key");
 			if (_newKey != null) {
 				_key.stringValue = _newKey;
 				_newKey = null;
