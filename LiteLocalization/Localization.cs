@@ -5,14 +5,14 @@ namespace Mewiof.LiteLocalization {
 
 	public static class Localization {
 
-		public const string EnglishLangKey = "en";
-		public const string RussianLangKey = "ru";
-
 		public const string DirectoryName = "Localization";
 		public const string FileNamePrefix = "local";
 
 		public static Dictionary<string, string> dict;
+
+#if UNITY_EDITOR
 		private static bool _initialized;
+#endif
 
 		public static event System.Action OnLangKeyChanged;
 
@@ -49,7 +49,7 @@ namespace Mewiof.LiteLocalization {
 		private static void Init() {
 			_initialized = true;
 			if (_langKey == null) {
-				LangKey = Application.systemLanguage == SystemLanguage.Russian ? RussianLangKey : EnglishLangKey;
+				LangKey = Application.systemLanguage == SystemLanguage.Russian ? "ru" : "en";
 			}
 		}
 

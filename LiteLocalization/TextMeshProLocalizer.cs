@@ -3,17 +3,17 @@ using TMPro;
 
 namespace Mewiof.LiteLocalization {
 
-	[RequireComponent(typeof(TextMeshProUGUI))]
-	public class TextMeshProUGUILocalizer : LocalizerBase {
+	[RequireComponent(typeof(TextMeshPro))]
+	public class TextMeshProLocalizer : LocalizerBase {
 
-		private TextMeshProUGUI _text;
+		private TextMeshPro _text;
 
 		protected override void UpdateValue() {
 			_text.text = localizedString.Value;
 		}
 
 		private void SetComponent() {
-			_text = GetComponent<TextMeshProUGUI>();
+			_text = GetComponent<TextMeshPro>();
 		}
 
 		private void Start() {
