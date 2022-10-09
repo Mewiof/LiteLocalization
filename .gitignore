@@ -1,0 +1,12 @@
+/[Bb]uilds/
+/[Ll]ibrary/
+/[Ll]ogs/
+/[Oo]bj/
+/[Tt]emp/
+/.vs/
+
+*.vsconfig
+*.csproj
+*.sln
+*.gitattributes
+*.meta
